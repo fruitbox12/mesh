@@ -1,0 +1,297 @@
+/* Remove overflow */
+body{
+  margin: 0px; background-color: #222222; overflow: hidden;
+}
+html, body{
+	width:100%; 
+	height:100%; 
+	padding:0px; 
+	margin:0px;
+	overflow: hidden;
+	background: -moz-linear-gradient(0deg,  #191d1e 50%, black 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#191d1e), color-stop(100%,#283139)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(0deg,  #191d1e 50%,#121759 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(0deg,  #121759 50%,#283139 100
+#chartdiv {
+  width: 100%;
+  height: 500px;
+max-width:100%;
+  background-color:transparent;
+}%); /* IE10+ */
+	background: linear-gradient(0deg,  #090a0a 50%,#59b8ff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-attachment: fixed
+}
+.transparent {
+  background: transparent;
+}
+
+.navbar-inverse {
+  transition: all 0.2s ease-in;
+}
+#projector {
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+} 
+
+.center-div {
+	width:580px;
+    height:374px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left: -290px;
+    margin-top:  -187px;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+max-width:100%;
+  background-color:transparent;
+}
+#preloaderDiv
+{
+	position:absolute;
+	left:50%;
+    top:50%;
+    margin-left: -27px;
+    margin-top:  -27px;
+}
+
+#logo{
+	opacity:0;
+    filter: alpha(opacity=0);
+}
+
+#date2014
+{
+	position:absolute;
+	padding-left: 210px;
+	padding-top:15px;
+	opacity:0;
+	top:303px;
+	left:0;
+    filter: alpha(opacity=0);
+}
+
+.staking-calc {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* set the z-index higher than other elements to make it appear on top */
+}
+.staking-calc-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.staking-calc-body-side {
+  display: block;
+  width: 50%;
+  margin-left: 0;
+  margin-right: 40px;
+}
+
+.right {
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+.right .side-container {
+background: linear-gradient(-65deg, rgba(0,0,01,1) 59%, rgba(89,184,255,1) 93%);
+opacity: .9;
+      border: 1px solid rgba(255, 255, 255, 0.2);  /* Slightly opaque border */
+ color: white;
+      backdrop-filter: blur(5px);
+
+  padding: 3.5rem 5rem 1.5rem;
+  width: auto;
+  position: relative;
+  border-radius: 8px;
+}
+
+.right .side-container svg {
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  
+}
+
+.staking-calc-slider,
+.staking-calc-result {
+  display: block;
+  
+  height: auto;
+  width: 100%;
+  margin: 0 0 48px;
+  padding: 0;
+}
+
+
+.staking-calc-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+label.total {
+  font-size: 46px;
+  line-height: 50px;
+}
+
+.staking-calc-question {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+.staking-calc-result .staking-calc-question {
+  color: #ffffff;
+}
+
+input[type=range] {
+    margin: 32px 0 0;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #1d1d1d;
+  background: linear-gradient(-60deg, black 0%, #59b8ff 93%);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    cursor: pointer;
+  position: relative;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ffffff;
+    position: relative;
+    border: none!important;
+}
+
+input[type=range]::-moz-range-thumb {
+    -moz-appearance: none !important;
+    background-color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ffffff;
+    position: relative;
+    border: none!important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .staking-calc-body-side, .right {
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+  
+  .right {
+    margin-right: 0;
+    margin-left: 40px;
+  }
+  
+  .side-container, .right .side-container {
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .right .side-container {
+    padding: 2rem 3rem;
+        opacity: .8;
+
+  }
+  
+  .staking-calc-label {
+    font-size: 24px; 
+  }
+  
+  label.total {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .staking-calc-question {
+    font-size: 16px;
+  }
+  
+  input[type=range] {
+    height: 16px;
+    border-radius: 12px;
+    margin-top: 24px;
+  }
+  
+  input[type=range]::-webkit-slider-thumb,
+  input[type=range]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  .staking-calc-body {
+    display: block;
+  }
+  
+  .staking-calc-body-side, .right {
+    margin: 0 auto;
+  }
+  
+  .right .side-container {
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .right .side-container {
+    padding: 2.5rem 1.5rem;
+  }
+  label.total {
+    font-size: 28px;
+  }
+}
